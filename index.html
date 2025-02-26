@@ -1,37 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Yinxuan like eat shit</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Welcome</title>
 </head>
-   
 <body>
+   <style>
+    body{
+        background-image: url(14731307_rm218-bb-07.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 150vh;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #wrapper{
+        padding: 10px;
+        margin: 0px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #box{
+        border: 10px;
+        background-color: white;
+        border-color: black;
+        border-radius: 10px;
+        max-width: 400px;
+        height: 600px;
+        padding: 10px;
+        width: 90%;
+       
+    }
+    h1 {
+        
+        
+        margin-top: 75px;
+        text-align: center;
+        font-size: 100px;
+        font-weight: 200;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        font-family: Brush Script MT, Brush Script Std, cursive;
+       }
+    form{
+        
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: -30px;
+        border-radius: 10px;
+        text-align: left;
+        position: absolute;
+        
+    }
+    label {
+        margin-top: 10px;
+    }
+    input[type="text"],input[type="password"]{
+        width: 100%;
+        max-width: 300px;
+        height: 45px;
+        
+        border: 2px;
+        border-radius: 10px;
+        border-color: black;
+        padding: 10px;
+        border-style: solid;
+    }
+    button[type="submit"]{
+        font-family: Brush Script MT, Brush Script Std, cursive;
+        font-size: 35px;
+        color: white;
+        background-image: url(v960-ning-30.jpg);
+        max-width: 450px;
+        width: 104%;
+        font-weight: bold;
+        height: 60px;
+        padding: 10px;
+        border-color: white;
+        border-radius: 10px;
+    }
+    h2{
+        font-size: 50px;
+    }
+    </style>
+   
+   <h1>HELLO!!</h1>
+   <div id="wrapper">
+   <div id="box"></div>
     
-    <p id="displayname"></p>
+    <form onsubmit="return savename()">
+        <h2>Login</h1>
+        <div>
+            <div>
+                <label for="name">User Name</label>
+            </div>
+            <br>
+        <input type="text" id="name"  placeholder="Dumbass">
+    
+    </div>
+    <br>
+    <div>
+        <div>
+        <label for="Password">Password</label>
+        </div>
+        <br>
+        <input type="password" id="Password" name="password" placeholder="12345678">
+        </div>
+        <br>
+        <div>
+            <label for="Gender">Gay</label>
+            <input type="radio">
+            <label for="Gender">Lesbian</label>
+            <input type="radio">
+            <label for="Gender">Transgender</label>
+            <input type="radio">
+        </div>
+        <br>
+        <br>
+        <br>
+        <button type="submit">LOGIN</button>
+    </form>
+</div>
+       
+    
     <script>
-        localStorage.getItem("name1");
-        if(name){document.getElementById("displayname").innerText ="Welcome Back, " + name;
-            }
-        else{
-            document.getElementById("displayname").innerText = "Welcome Back, "+ "Guest";
+        function savename(){
+            let name = document.getElementById("name").value;
+            localStorage.setItem("name1",name) ;
+            window.location.href = 'mainpage.html';
+            return false;
+        
         }
-            </script>
+        </script>
+    </body>
+    <br>
     
-    <p id="displayname"></p>
-    <h1>Ajax like Claire</h1>
-    <img src="ajaxnclaire.png">
-    <h1>hello</h1>
-    <a href="https://youtu.be/dQw4w9WgXcQ?si=nD6Uv62n0GUF0FoD" target="_self" title="Ajax and Claire Sex Scene">
-        <button>Sex Scene</button>
-        </a>
-    <a href="page2.html" target="_self" title="Ajax and Claire Sex Scene">
-        <button>Secret Place</button>
-        </a>
-    <a href="workinghours.html">
-        <button>Working Hour</button>
-    </a>
-   
-   
+</body>
 </html>
